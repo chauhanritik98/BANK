@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KINGSTON BANK</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">KINGSTON BANK</div>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Check Balance</a></li>
+        <li><a href="#" id="loginBtn">Login</a></li>
+        <li><a href="#" id="registerBtn">Register</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="landing">
+    <h1>Welcome to KINGSTON BANK</h1>
+    <p>Where Royalty meets Financial Power.</p>
+    <div class="datetime" id="dateTimeDisplay"></div>
+    <button class="btn" id="mainLoginBtn">Login</button>
+    <button class="btn btn-secondary" id="mainRegisterBtn">Register</button>
+  </main>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal="loginModal">&times;</span>
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button class="btn">Submit</button>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal="registerModal">&times;</span>
+      <h2>Register</h2>
+      <input type="text" placeholder="Full Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button class="btn">Register</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>At KINGSTON BANK, your legacy is not just safeguarded — it is empowered, elevated, and treated with the royal excellence it deserves.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
